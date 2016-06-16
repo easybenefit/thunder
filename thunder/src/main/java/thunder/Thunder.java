@@ -9,9 +9,10 @@ import java.util.Map;
  * Copyright: 杭州医本健康科技有限公司(2015-2016)
  * Description: 注解绑定类
  */
-@SuppressWarnings({"unused", "unchecked"})
 public class Thunder {
 
+    //打印模式设置
+    private static boolean debug = false;
     //Bind生成类后缀
     private static final String BINDING_CLASS_SUFFIX = "_Thunder";
 
@@ -26,7 +27,6 @@ public class Thunder {
         }
     };
 
-    private static boolean debug = false;
 
     public static void setDebug(boolean debug) {
 
@@ -37,6 +37,7 @@ public class Thunder {
 
     /**
      * 查询绑定对象，即查找由Thunder.bind(this)所生气的新对象类
+     *
      * @param clazz 类名
      * @return
      * @throws IllegalAccessException
