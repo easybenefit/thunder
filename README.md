@@ -34,11 +34,11 @@ public interface UserApi {
 
 
     @RpcApi("/yb-api/user/info")
-    void doGetUserInfo(@RpcParam(name = "userId") int userId, 
+    void doGetUserInfoRequest(@RpcParam(name = "userId") int userId, 
 						RpcServiceCallbackAdapter<UserInfo> callbackAdapter);
 
-    @RpcApi("/yb-api/user/modify")
-    void doGetUserInfo(@RpcBody UserInfo userInfo, 
+    @RpcApi(value = "/yb-api/user/modify", methodType = MethodType.PUT)
+    void doPutUserInfoRequest(@RpcBody UserInfo userInfo, 
 						RpcServiceCallbackAdapter<UserInfo> callbackAdapter);
   }
 ```
@@ -63,8 +63,4 @@ class ThunderActivity extends Activity {
   }
 ```
 
-
-
-
-
- [1]: http://www.yibenjiankang.com/pc/jiaru.html
+[1]: http://www.yibenjiankang.com/pc/jiaru.html
