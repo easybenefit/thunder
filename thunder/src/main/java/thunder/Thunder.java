@@ -7,7 +7,7 @@ import java.util.Map;
  * Created by HandGunBreak on 2016/4/15 - 10:09.
  * Mail: handgunbreak@gmail.com
  * Copyright: 杭州医本健康科技有限公司(2015-2016)
- * Description:
+ * Description: 注解绑定类
  */
 @SuppressWarnings({"unused", "unchecked"})
 public class Thunder {
