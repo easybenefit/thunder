@@ -1,13 +1,13 @@
-Thunder网络框架
+基于编译期注解的Android Rpc框架
 ============
 
 ![Logo](http://www.yibenjiankang.com/pc/style/images/jiaru_banner.png)
 
-基于编译期注解的Android网络请求开源框架。
+说明描述
 
  * @Rpc,网络请求接口类类注解.
- * @RpcInterceptors, 类及及方式注解，注解value必须是RpcInterceptor类。
- * @RpcInterceptor, 类及及方式注解，注解value必须是RpcInterceptor类。
+ * @RpcInterceptors, 类及方法拦截器注解，注解value必须是RpcInterceptor类。
+ * @RpcInterceptor, 类及方法拦截器注解，注解value必须是RpcInterceptor类。
  * @RpcParam，参数注解
  * @RpcBody， 参数对象注解
  
@@ -63,4 +63,20 @@ class ThunderActivity extends Activity {
   }
 ```
 
-[1]: http://www.yibenjiankang.com/pc/jiaru.html
+License
+-------
+
+    Copyright 2013 Jake Wharton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
