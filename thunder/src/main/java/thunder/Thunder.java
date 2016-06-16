@@ -36,7 +36,7 @@ public class Thunder {
     static final Map<Class<?>, RpcBind<Object>> BINDERS = new LinkedHashMap();
 
     /**
-     * 查询绑定对象，即查找由Thunder.bind(this)所生气的新对象类
+     * 查询绑定对象，即查找由Thunder.bind(this)所生成的新类
      *
      * @param clazz 类名
      * @return
